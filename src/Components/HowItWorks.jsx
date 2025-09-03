@@ -20,7 +20,7 @@ const HowItWorks = () => {
     };
     return (
         <section className="py-12">
-            <div className="max-w-6xl mx-auto px-6">
+            <div className="max-w-11/12 mx-auto px-6">
                 {/* <h2 className="text-3xl font-bold text-center mb-10">How It Works</h2> */}
                 <h2 className="mb-10 text-3xl font-semibold text-yellow-600 flex justify-center items-center"> <span className="mr-3"><FaHeart /></span> How It Works</h2>
 

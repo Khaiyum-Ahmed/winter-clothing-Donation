@@ -3,6 +3,7 @@ import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import About from "../Components/About";
 import HowItWorks from "../Components/HowItWorks";
+import FAQ from "../Components/FAQ";
 
 const Home = () => {
     return (
@@ -16,6 +17,7 @@ const Home = () => {
             <main className="max-w-11/12 mx-auto">
                 <About></About>
                 <HowItWorks></HowItWorks>
+                <FAQ></FAQ>
             </main>
             <footer>
                 <Footer></Footer>

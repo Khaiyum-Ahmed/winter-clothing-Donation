@@ -4,7 +4,7 @@ import { FaHeart } from "react-icons/fa";
 const About = () => {
     return (
         <div className="hero py-10">
-            <div className="hero-content gap-8 flex-col lg:flex-row ">
+            <div className="hero-content max-w-11/12 mx-auto gap-8 flex-col lg:flex-row ">
                 
                <div className="relative">
                 <div className="bg-[rgba(0,3,13,0.5)] w-full h-full absolute top-0 left-0 rounded-lg"></div>
