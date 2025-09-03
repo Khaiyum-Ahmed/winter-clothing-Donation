@@ -1,7 +1,7 @@
-import { Outlet } from "react-router-dom";
 import Header from "../Components/Header";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import About from "../Components/About";
 
 const Home = () => {
     return (
@@ -13,7 +13,7 @@ const Home = () => {
                 <Header></Header>
             </header>
             <main className="max-w-11/12 mx-auto">
-                <Outlet></Outlet>
+                <About></About>
             </main>
             <footer>
                 <Footer></Footer>
