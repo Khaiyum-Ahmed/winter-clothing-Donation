@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "title": "Warm Smiles for Dhaka",
+    "image": "https://i.ibb.co.com/ns1Sy0FG/a-child-holds-a-donation-box-with-clothes-in-the-living-room-photo.jpg",
+    "description": "As winter temperatures dip across the capital, underprivileged families in Dhaka’s dense urban neighborhoods are struggling to keep their children warm. Shelter costs and heating expenses are rising, making warm clothing a critical necessity. This campaign aims to collect blankets, sweaters, and jackets, directly delivering them to families in need and coordinating with local NGOs to ensure timely distribution.",
+    "status": "Ongoing",
+    "contactinfo": "contact@dhakawarm.org | +8801712345678",
+    "division": "Dhaka"
+  },
+  {
+    "id": 2,
+    "title": "Blankets for Old Dhaka",
+    "image": "https://i.ibb.co.com/Z6zw7dxY/istockphoto-495762842-612x612.jpg",
+    "description": "With frigid nights gripping Old Dhaka, many elderly residents who live alone face grave risks from hypothermia and illness. Many lack the means to buy proper winter gear. This campaign collects high-quality blankets and scarves to protect vulnerable seniors. Volunteers will distribute these directly to recipients’ homes, fostering comfort and community solidarity in the cold season.",
+    "status": "Upcoming",
+    "contactinfo": "oldtownhelp@gmail.com | +8801912345678",
+    "division": "Dhaka"
+  },
+  {
+    "id": 3,
+    "title": "Winter Aid for Street Children",
+    "image": "https://i.ibb.co.com/MD0ZpvtP/where-to-donate-clothing-header.jpg",
+    "description": "Street children in Dhaka endure long, cold nights without proper shelter or protection. With recent reports showing a spike in respiratory illnesses among this demographic, providing winter clothing has never been more urgent. This campaign will distribute jackets, warm socks, and beanies directly through outreach teams, aiming to reduce illness and offer comfort during the harsh season.",
+    "status": "Completed",
+    "contactinfo": "childcare@dhaka.org | +8801812345678",
+    "division": "Dhaka"
+  },
+  {
+    "id": 4,
+    "title": "Sylhet Hills Warmth Drive",
+    "image": "https://i.ibb.co.com/5h51Kh7G/istockphoto-1396160859-612x612.jpg",
+    "description": "As winter approaches the Sylhet Hills, tea garden workers, many living in makeshift quarters, face decreasing temperatures and limited access to warm clothing. This drive focuses on collecting thick sweaters, thermal wear, and blankets. We partner with local plantation managers and community leaders to ensure fair distribution, helping families stay warm through the coldest months of the year.",
+    "status": "Ongoing",
+    "contactinfo": "sylhetwarmdrive@gmail.com | +8801312345678",
+    "division": "Sylhet"
+  },
+  {
+    "id": 5,
+    "title": "Blankets for Sylhet Flood Victims",
+    "image": "https://i.ibb.co.com/4nsR67Xv/closeup-woman-sorting-old-outofuse-600nw-2565752027.webp",
+    "description": "Following the recent heavy rains and flooding in Sylhet, displaced families are grappling with cold nights in temporary shelters. Many lost their possessions, including warm clothing. This campaign provides blankets and shawls to those in evacuation centers. Coordinating closely with local relief organizations, we aim for fast and equitable delivery to families braving the winter chill in unsettled conditions.",
+    "status": "Upcoming",
+    "contactinfo": "floodaid@sylhet.org | +8801412345678",
+    "division": "Sylhet"
+  },
+  {
+    "id": 6,
+    "title": "Street Vendors Warm Support",
+    "image": "https://i.ibb.co.com/ymfj9ZKY/istockphoto-1388517849-612x612.jpg",
+    "description": "Recently, street vendors in Sylhet have reported sluggish sales and longer exposure to cold during early mornings and evenings. With limited earnings, they struggle to afford warm gear. This campaign collects hooded jackets, warm scarves, and gloves, ensuring vendors stay healthy and warm while supporting their families and livelihoods during the chilly season.",
+    "status": "Ongoing",
+    "contactinfo": "vendorshelp@gmail.com | +8801512345678",
+    "division": "Sylhet"
+  },
+  {
+    "id": 7,
+    "title": "Chittagong Hill Tracts Clothing Drive",
+    "image": "https://i.ibb.co.com/Y75q7sgY/istockphoto-1438297783-612x612.jpg",
+    "description": "Indigenous communities in the Chittagong Hill Tracts are facing increasingly harsh winters due to climate shifts. Many families live in elevated, remote areas, lacking access to markets offering warm clothing. This drive delivers jackets, thermal wear, and woolen accessories. Leveraging local coordination, we reach remote villages, aiming to reduce cold-related illnesses and foster stronger rural winter preparedness.",
+    "status": "Ongoing",
+    "contactinfo": "chtclothingdrive@gmail.com | +8801612345678",
+    "division": "Chittagong"
+  },
+  {
+    "id": 8,
+    "title": "Port City Blanket Distribution",
+    "image": "https://i.ibb.co.com/5h51Kh7G/istockphoto-1396160859-612x612.jpg",
+    "description": "In Chittagong’s port areas, daily laborers and dock workers often endure early morning shifts in subzero winds. With rising living costs, purchasing warm clothing is a challenge. This campaign focuses on distributing thick blankets and heavy shawls. We collaborate with shipyard teams and port associations to deliver these directly at shift locations, ensuring workers stay warm and safe while earning their livelihoods.",
+    "status": "Completed",
+    "contactinfo": "portcitywarm@gmail.com | +8801712345679",
+    "division": "Chittagong"
+  },
+  {
+    "id": 9,
+    "title": "Fishing Community Winter Aid",
+    "image": "https://i.ibb.co.com/ns1Sy0FG/a-child-holds-a-donation-box-with-clothes-in-the-living-room-photo.jpg",
+    "description": "Fishing communities along the Chittagong coast are particularly vulnerable to cold winds and humidity, especially as colder months set in. Many fishermen venture out at dawn in wet, cold conditions without proper protective gear. This donation drive aims to distribute waterproof jackets, woolen socks, and headgear. Through collaborations with local fisheries associations, we ensure these supplies reach families who need them most.",
+    "status": "Upcoming",
+    "contactinfo": "fishingaid@chittagong.org | +8801812345679",
+    "division": "Chittagong"
+  }
+]
