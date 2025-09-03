@@ -19,7 +19,7 @@ const About = () => {
                     <p className="py-6 animate__fadeInBottomRight">
                        Every winter, countless families in Bangladesh face the bitter cold without proper clothing. We believe warmth is a basic right, not a privilege. By joining hands with compassionate donors and volunteers, we strive to provide winter clothes, spread hope, and build a caring community for a warmer Bangladesh.
                     </p>
-                    <button className="btn btn-primary bg-amber-500 border-none text-white">Donate Now </button>
+                    <button className="btn btn-primary bg-amber-500 border-none text-white">Learn More </button>
                 </div>
             </div>
         </div>
