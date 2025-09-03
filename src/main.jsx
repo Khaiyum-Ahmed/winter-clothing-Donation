@@ -11,36 +11,47 @@ import AuthLayouts from './Components/AuthLayouts';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
 import ErrorPage from './Pages/ErrorPage';
+import DonationCampaign from './Pages/DonationCampaign';
+import DonationDetails from './Pages/DonationDetails';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home></Home>,
-    children:[
+    children: [
       {
-        path:"",
+        path: "",
         element: <Navigate to="/"></Navigate>
       },
-      
+
     ]
   },
   {
+    path: "/donationCampaigns",
+    element: <DonationCampaign></DonationCampaign>
+  },
+  {
+    path:"donationCard/:id",
+    element:<DonationDetails></DonationDetails>,
+    loader: ()=> fetch('data.json')
+  },
+  {
     path: "/auth",
-    element:<AuthLayouts></AuthLayouts>,
-    children:[
+    element: <AuthLayouts></AuthLayouts>,
+    children: [
       {
-        path:"/auth/login",
-        element:<Login></Login>
+        path: "/auth/login",
+        element: <Login></Login>
       },
       {
-        path:"/auth/register",
-        element:<Register></Register>
+        path: "/auth/register",
+        element: <Register></Register>
       }
     ]
   },
   {
-    path:"*",
-    element:<ErrorPage></ErrorPage>
+    path: "*",
+    element: <ErrorPage></ErrorPage>
   }
 ]);
 
