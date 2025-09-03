@@ -9,7 +9,6 @@ const Home = () => {
             <nav className="bg-[#21293b]">
                 <Navbar></Navbar>
             </nav>
-
             <header>
                 <Header></Header>
             </header>

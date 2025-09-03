@@ -8,3 +8,8 @@ body{
   font-style: normal;
 
 }
+a.active{
+  color: #eb9309;
+  font-weight: 600;
+  font-size: 1.1rem;
+}

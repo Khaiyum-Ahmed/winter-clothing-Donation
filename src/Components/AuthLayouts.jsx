@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 const AuthLayouts = () => {
     return (
         <div>
-            <header>
+            <header className="bg-[#21293b]">
                 <Navbar></Navbar>
             </header>
             <Outlet></Outlet>
