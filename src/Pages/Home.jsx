@@ -15,6 +15,7 @@ const Home = () => {
                 <Header></Header>
             </header>
             <main className="max-w-11/12 mx-auto">
+            
                 <About></About>
                 <HowItWorks></HowItWorks>
                 <FAQ></FAQ>

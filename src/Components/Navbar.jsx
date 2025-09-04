@@ -1,12 +1,15 @@
-import {  Link, NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/logo (1).png"
+import { useContext } from "react";
+import { DonationContext } from "../Provider/DonationProvider";
 const Navbar = () => {
+    const { user,logOut } = useContext(DonationContext);
     const links = <>
-    <li><NavLink to="/">Home</NavLink></li>
-    <li><NavLink to="/dashboard">Dashboard</NavLink></li>
-    <li><NavLink to="/donationCampaigns">Donation campaigns</NavLink></li>
-    <li><NavLink to="/howToHelp">How to Help</NavLink></li>
-       
+        <li><NavLink to="/">Home</NavLink></li>
+        <li><NavLink to="/dashboard">Dashboard</NavLink></li>
+        <li><NavLink to="/donationCampaigns">Donation campaigns</NavLink></li>
+        <li><NavLink to="/howToHelp">How to Help</NavLink></li>
+
     </>
     return (
         <div className="max-w-11/12 mx-auto py-3">
@@ -30,7 +33,21 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link to="/auth/login" className="btn">Login</Link>
+                    <div className="flex gap-2.5 items-center">
+                        {
+                            user && user?.email ? (
+                                <div>
+                                    <img className="w-10 h-10 rounded-full" src={user?.photoURL} alt="" />
+                                    <p className="text-white font-medium">{user?.displayName}</p>
+                                </div>
+                            ) : ("")
+                        }
+                        {
+                            user && user?.email ? (<button onClick={logOut} className="btn ml-4">Logout</button>) :
+                                (<Link to="/auth/login" className="btn">Login</Link>)
+                        }
+                    </div>
+                    
                 </div>
             </div>
         </div>

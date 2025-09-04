@@ -13,6 +13,10 @@ import Register from './Pages/Register';
 import ErrorPage from './Pages/ErrorPage';
 import DonationCampaign from './Pages/DonationCampaign';
 import DonationDetails from './Pages/DonationDetails';
+import DonationProvider from './Provider/DonationProvider';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
+import Dashboard from './Pages/Dashboard';
+import FAQ from './Components/FAQ';
 
 const router = createBrowserRouter([
   {
@@ -27,13 +31,17 @@ const router = createBrowserRouter([
     ]
   },
   {
+    path: "/dashboard",
+    element: <Dashboard></Dashboard>
+  },
+  {
     path: "/donationCampaigns",
     element: <DonationCampaign></DonationCampaign>
   },
   {
-    path:"donationCard/:id",
-    element:<DonationDetails></DonationDetails>,
-    loader: ()=> fetch('data.json')
+    path: "donationCard/:id",
+    element: <PrivateRoute><DonationDetails></DonationDetails></PrivateRoute>,
+    loader: () => fetch('data.json')
   },
   {
     path: "/auth",
@@ -57,6 +65,10 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+
+    <DonationProvider>
+      <RouterProvider router={router} />
+    </DonationProvider>
+
   </StrictMode>,
 )
