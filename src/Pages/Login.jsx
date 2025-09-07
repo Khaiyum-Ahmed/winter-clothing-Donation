@@ -10,6 +10,9 @@ const Login = () => {
     const navigate = useNavigate();
 
 
+
+
+
     const handleLogIn = (e) => {
         e.preventDefault();
         const from = e.target;
@@ -17,9 +20,17 @@ const Login = () => {
         const password = from.password.value;
         console.log({ email, password });
 
+
+        const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+        if (!passwordRegex.test(password)) {
+            setError("Password must be at least 8 characters, include one uppercase, one lowercase, one number, and one special character.");
+            return;
+        }
+
         // users sign in
         signInUsers(email, password)
             .then(result => {
+
                 const user = result.user;
                 setUser(user);
                 navigate(location?.state ? location.state : "/")

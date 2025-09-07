@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { DonationContext } from "../Provider/DonationProvider";
 
 const Register = () => {
-    const {setUser,signUpUsers,updateUserProfile} = useContext(DonationContext);
+    const { setUser, signUpUsers, updateUserProfile } = useContext(DonationContext);
     const navigate = useNavigate();
 
     const handleRegister = (e) => {
@@ -15,26 +15,31 @@ const Register = () => {
         const photo = form.photo.value;
         const password = form.password.value;
 
-
+        const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+        if (!passwordRegex.test(password)) {
+            alert("Password must be at least 8 characters, include one uppercase, one lowercase, one number, and one special character.");
+            return;
+        }
         // create new users
 
-        signUpUsers(email,password)
-        .then(result =>{
-            const user = result.user;
-            setUser(user);
-            updateUserProfile({displayName:name, photoURL:photo})
-            .then(()=>{
-                navigate("/");
+        signUpUsers(email, password)
+            .then(result => {
+
+                const user = result.user;
+                setUser(user);
+                updateUserProfile({ displayName: name, photoURL: photo })
+                    .then(() => {
+                        navigate("/");
+                    })
+                    .catch(err => {
+                        console.log(err)
+                    })
             })
-            .catch(err=>{
-                console.log(err)
-            })
-        })
-        .catch(error=>{
-            const errorCode = error.code;
-            const errorMessage = error.message;
-            console.log(errorCode, errorMessage)
-        });
+            .catch(error => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                console.log(errorCode, errorMessage)
+            });
     }
     return (
         <div>
@@ -59,10 +64,10 @@ const Register = () => {
                                     <input name="password" type="password" className="input w-full" placeholder="Password" required />
 
                                     <label className="label mt-3">
-                                        <input type="checkbox"  className="checkbox"
-                                        required />
+                                        <input type="checkbox" className="checkbox"
+                                            required />
                                         Accept all trams and conditions!
-                                
+
                                     </label>
 
                                     <button className="btn btn-neutral bg-amber-500 border-none text-xl text-white mt-4">Register</button>
