@@ -1,10 +1,12 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { DonationContext } from "../Provider/DonationProvider";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Register = () => {
     const { setUser, signUpUsers, updateUserProfile } = useContext(DonationContext);
     const navigate = useNavigate();
+    const [showPassword, setShowPassword] = useState(false);
 
     const handleRegister = (e) => {
         e.preventDefault();
@@ -60,8 +62,17 @@ const Register = () => {
                                     <label className="label">Email</label>
                                     <input name="email" type="email" className="input w-full" placeholder="Email" required />
 
-                                    <label className="label">Password</label>
-                                    <input name="password" type="password" className="input w-full" placeholder="Password" required />
+                                    <div className="relative">
+                                        <label className="label">Password</label>
+                                        <input name="password" type={
+                                            showPassword ? "text" : "password"
+                                        } className="input w-full" placeholder="Password" required />
+                                        <button onClick={()=> setShowPassword(!showPassword)} className="btn btn-ghost absolute right-0">
+                                            {
+                                                showPassword? <FaEye />: <FaEyeSlash></FaEyeSlash>
+                                            }
+                                        </button>
+                                    </div>
 
                                     <label className="label mt-3">
                                         <input type="checkbox" className="checkbox"

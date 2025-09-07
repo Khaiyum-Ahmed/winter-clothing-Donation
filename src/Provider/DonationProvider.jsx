@@ -1,4 +1,4 @@
-import {  createUserWithEmailAndPassword, getAuth, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
+import {  createUserWithEmailAndPassword, getAuth, GoogleAuthProvider, onAuthStateChanged, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import app from "../Firebase/Firebase.config"
   // eslint-disable-next-line react-refresh/only-export-components
@@ -22,6 +22,11 @@ const DonationProvider = ({children}) => {
     return createUserWithEmailAndPassword(auth, email, password);
   }
 
+
+  const resetPassword = (email)=>{
+    return sendPasswordResetEmail(auth, email);
+  }
+
   const updateUserProfile = (updatedData)=>{
     return updateProfile(auth.currentUser, updatedData);
   }
@@ -43,6 +48,7 @@ const DonationProvider = ({children}) => {
     signInUsers,
     updateUserProfile,
     signUpUsers,
+    resetPassword,
     logOut,
     loading
   }
